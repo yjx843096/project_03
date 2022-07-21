@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    class phone{
+      //静态属性
+      static name='手机';
+      static change(){
+        console.log('我可以改变世界');
+      }
+    }
+    let nokia=new phone();
+    console.log(nokia.name);
+    console.log(phone.name);
+    phone.change();
+  </script>
+</body>
+</html>

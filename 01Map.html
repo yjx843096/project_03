@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  
+    // Map集合
+    // 创建一个空 map
+    let m = new Map();
+    // 创建一个非空 map
+    let m2 = new Map([
+    ['name','尚硅谷'],
+    ['slogon','不断提高行业标准']
+    ]);
+    // 1. size 返回 Map 的元素个数；
+    console.log(m2.size);
+    // 2. set 增加一个新元素，返回当前 Map；
+    m.set('皇帝','大哥')
+    m.set('丞相','二哥')
+    console.log(m);
+    //3.get返回键名对象的键值
+    console.log(m.get('皇帝'));
+    //4.has检测Map中是否包含某个元素，返回boolean值
+    console.log(m.has('皇帝'));
+    m.clear();
+    console.log(m);
+  </script>
+</body>
+</html>

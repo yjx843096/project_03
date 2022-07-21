@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    //Set集合
+    let s=new Set();
+    console.log(s,typeof s);
+    let s1 = new Set(["大哥","二哥","三哥","四哥","三哥"]);
+    console.log(s1);
+    //2.add增加一个新元素，返回当前集合
+    s1.add('大姐')
+    console.log(s1);
+    //3.delete删除元素,返回boolean值：
+    let result=s1.delete('三哥')
+    console.log(result);
+    console.log(s1);
+
+    // 4.has检测集合中是否包含某个元素，返回boolean
+    let r1=s1.has('二姐')
+    console.log(r1);
+    //5.clear清空集合，返回undefined
+    s1.clear();
+    console.log(s1);
+  </script>
+</body>
+</html>
